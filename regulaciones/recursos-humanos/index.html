@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HUMAN HEALTH: Gestión integral de salud ocupacional, cumplimiento normativo y soporte técnico para Recursos Humanos" />
+        <link rel="icon" type="image/png" href="/images/HHicon.png" />
+        <title>Human Health</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="https://kit.fontawesome.com/541b6877f4.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="menu">
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.jpg" alt="Logo Human Health" class="logo-img">
+                <h1 class="logo-text"><span class="black"> Human </span><span class="green"> Health </span></h1>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/quiénes-somos/">Quiénes somos</a></li>
+                    <li><a href="/servicios/">Servicios</a></li>
+                    <li><a href="/regulaciones/">Regulaciones</a></li>
+                    <li><a href="/contacto/">Contáctanos</a></li>
+                </ul>
+                <div class="menu-icon" onclick="showSidebar()"> 
+                    <i class="fa-solid fa-bars"></i>
+                </div> 
+            </nav>
+        </header>
+
+        <ul class="sidebar">
+            <li class="cerrar">
+                <a href="#" onclick="hideSidebar()">
+                    <span class="icono">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <span class="texto"></span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html">
+                    <span class="icono">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="texto">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/quiénes-somos/">
+                    <span class="icono">
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <span class="texto">Quiénes somos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/servicios/">
+                    <span class="icono">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </span>
+                    <span class="texto">Servicios</span>
+                </a>
+            </li>
+            <li>
+                <a href="/regulaciones/">
+                    <span class="icono">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </span>
+                    <span class="texto">Regulaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contacto/">
+                    <span class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span class="texto">Contáctanos</span>
+                </a>
+            </li>
+        </ul>
+
+        <main> 
+
+            <section class="documentos">
+                <div class="documentos-header">
+                    <h2> Lectura del capital humano </h2>
+                    <p> Datos útiles para gestión de personas y decisiones preventivas </p>
+                    <div class="barra"></div>
+                    <p>
+                        La información médico-laboral debe transformarse en indicadores de gestión, sin vulnerar confidencialidad clínica. Esto permite orientar recursos, detectar tendencias y priorizar intervenciones preventivas.
+                    </p>
+                </div>
+
+                <div class="documentos-contenedor">
+                    <div class="documentos-tarjeta">
+                        <div class="documentos-icono">
+                            <i class="fa-solid fa-user-slash"></i>
+                        </div>
+                        <h3 class="documentos-titulo"> Ausentismo </h3>
+                        <p> Días perdidos, frecuencia de licencias, duración promedio, reincidencia y diagnósticos agrupados por categoría. </p>
+                    </div>
+
+                    <div class="documentos-tarjeta">
+                        <div class="documentos-icono">
+                            <i class="fa-solid fa-person-falling"></i>
+                        </div>
+                        <h3 class="documentos-titulo"> Accidentes y ART </h3>
+                        <p> Eventos por sector, mecanismo lesional, días caídos, altas observadas y casos con secuelas funcionales. </p>
+                    </div>
+
+                    <div class="documentos-tarjeta">
+                        <div class="documentos-icono">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <h3 class="documentos-titulo"> Aptitudes </h3>
+                        <p> Aptos, aptos con observaciones, pendientes por estudios, no aptos temporales y casos con restricciones. </p>
+                    </div>
+
+                    <div class="documentos-tarjeta">
+                        <div class="documentos-icono">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3 class="documentos-titulo"> Prevención </h3>
+                        <p> Capacitaciones ejecutadas, dotación alcanzada, exámenes pendientes, acciones correctivas y seguimiento de desvíos. </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="servicios-proceso">
+                    <div class="proceso-header">
+                        <div>TIPO DE REPORTE</div>
+                        <div>PERIODICIDAD SUGERIDA</div>
+                        <div>USO PRINCIPAL</div>
+                    </div>
+
+                    <div class="proceso-tabla">
+
+                        <div class="proceso-tarjeta">
+                            <div class="primero">Reporte ejecutivo de ausentismo</div>
+                            <div class="segundo">
+                                Mensual
+                            </div>
+                            <div class="tercero">
+                                Análisis de tendencias y casos de impacto operativo.
+                            </div>
+                        </div>
+
+                        <div class="proceso-tarjeta">
+                            <div class="primero">Tablero de exámenes médicos</div>
+                            <div class="segundo">
+                                Mensual / trimestral
+                            </div>
+                            <div class="tercero">
+                                Control de cumplimiento documental y planificación.
+                            </div>
+                        </div>
+
+                        <div class="proceso-tarjeta">
+                            <div class="primero">Informe de casos críticos</div>
+                            <div class="segundo">
+                                Según necesidad
+                            </div>
+                            <div class="tercero">
+                                Decisiones laborales, legales y de reincorporación.
+                            </div>
+                        </div>
+
+                        <div class="proceso-tarjeta">
+                            <div class="primero">Informe preventivo anual</div>
+                            <div class="segundo">
+                                Anual
+                            </div>
+                            <div class="tercero">
+                                Revisión de gestión, resultados e iniciativas de mejora.
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+        </main>
+
+        <footer class="HH-footer">
+            <div class="HH-container">
+                <div class="HH-columna HH-logo">
+                    <h2>Human <span class="green"> Health </span></h2>
+                    <p class="HH-legal">Human Health CUIT 00-00000000-0</p>
+                    <p class="HH-email">administracion.humanhealth@gmail.com</p>
+                    <div class="HH-social-icons">
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="HH-columna HH-nav">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/quiénes-somos/">Quiénes Somos</a></li>
+                        <li><a href="/servicios/">Servicios</a></li>
+                        <li><a href="/regulaciones/">Regulaciones</a></li>
+                        <li><a href="/contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="HH-columna HH-paginas">
+                    <h4> CONTENIDO COMPLEMENTARIO </h4>
+                    <ul>
+                        <li><a href="/quiénes-somos/proceso-e-implementación/">Proceso Estructurado</a></li>
+                        <li><a href="/servicios/ausentismo-y-prevención/">Ausentismo y Prevención</a></li>
+                        <li><a href="/regulaciones/confidencialidad/">Documentación</a></li>
+                        <li><a href="/regulaciones/recursos-humanos/">Indicadores para RRHH</a></li>
+                    </ul>
+                </div>
+
+                <div class="HH-columna HH-contacto">
+                    <h4> ¿NECESITÁS AYUDA? </h4>
+                    <p>
+                        Estamos disponibles para responder tus consultas y acompañar a tu organización.
+                    </p>
+                    <a href="/contacto/" class="HH-btn-contacto">
+                        Solicitar consulta
+                    </a>
+                </div>
+            </div>
+
+            <div class="HH-footer-bottom">
+                <p>&copy; 2026 Human Health. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="/javascript/script.js"></script>
+    </body>
+</html>

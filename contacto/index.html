@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HUMAN HEALTH: Gestión integral de salud ocupacional, cumplimiento normativo y soporte técnico para Recursos Humanos" />
+        <link rel="icon" type="image/png" href="/images/HHicon.png" />
+        <title>Human Health</title>
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+
+        <script src="https://kit.fontawesome.com/541b6877f4.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="menu">
+            <a href="/index.html" class="logo">
+                <img src="/images/logo.jpg" alt="Logo Human Health" class="logo-img">
+                <h1 class="logo-text"><span class="black"> Human </span><span class="green"> Health </span></h1>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/quiénes-somos/">Quiénes somos</a></li>
+                    <li><a href="/servicios/">Servicios</a></li>
+                    <li><a href="/regulaciones/">Regulaciones</a></li>
+                    <li><a href="/contacto/">Contáctanos</a></li>
+                </ul>
+                <div class="menu-icon" onclick="showSidebar()"> 
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <ul class="sidebar">
+            <li class="cerrar">
+                <a href="#" onclick="hideSidebar()">
+                    <span class="icono">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <span class="texto"></span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html">
+                    <span class="icono">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="texto">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/quiénes-somos/">
+                    <span class="icono">
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <span class="texto">Quiénes somos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/servicios/">
+                    <span class="icono">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </span>
+                    <span class="texto">Servicios</span>
+                </a>
+            </li>
+            <li>
+                <a href="/regulaciones/">
+                    <span class="icono">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </span>
+                    <span class="texto">Regulaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contacto/">
+                    <span class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span class="texto">Contáctanos</span>
+                </a>
+            </li>
+        </ul> 
+        
+        <main>
+
+            <section class="contacto">
+                <div class="contacto-info">
+                    <div class="info-header">
+                        <h4>Contáctanos</h4>
+                        <h2>Envíanos un mensaje</h2>
+                        <p>
+                            Completa el formulario y nos pondremos en contacto contigo
+                            a la mayor brevedad posible.
+                        </p>
+                    </div>
+                    <div class="contacto-elemento">
+                        <div class="contacto-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contacto-texto">
+                            <h3>Ubicación</h3>
+                            <p>
+                                Buenos Aires, Argentina
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacto-elemento">
+                        <div class="contacto-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contacto-texto">
+                            <h3>Correo electrónico</h3>
+                            <p>
+                                administracion.humanhealth@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacto-elemento">
+                        <div class="contacto-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contacto-texto">
+                            <h3>Teléfono</h3>
+                            <p>
+                                +5491100000000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacto-elemento">
+                        <div class="contacto-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="contacto-texto">
+                            <h3>Horarios</h3>
+                            <p>
+                                Lunes a Viernes<br>
+                                09:00 - 18:00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-destacados">
+                        <div class="destacado-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Respuesta en menos de 24 hs</span>
+                        </div>
+
+                        <div class="destacado-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+
+                        <div class="destacado-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Cobertura nacional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacto-tarjeta">
+                    <div class="contacto-formulario">
+                        <form id="form-contacto">
+                            <div class="input-grupo">
+                                <div class="input-caja">
+                                    <label>Nombre <span class="obligatorio">*</span></label>
+                                    <input type="text" name="nombre" class="campo-obligatorio">
+                                    <p class="aviso"> 
+                                        Este campo es obligatorio
+                                    </p>
+                                </div>
+                                <div class="input-caja">
+                                    <label>Empresa</label>
+                                    <input type="text" name="empresa">
+                                </div>
+                            </div>
+                            <div class="input-grupo">
+                                <div class="input-caja">
+                                    <label>Correo electrónico <span class="obligatorio">*</span></label>
+                                    <input type="email" name="email" class="campo-obligatorio">
+                                    <p class="aviso"> 
+                                        Este campo es obligatorio
+                                    </p>
+                                </div>
+                                <div class="input-caja">
+                                    <label>Teléfono <span class="obligatorio">*</span></label>
+                                    <input type="tel" name="telefono" class="campo-obligatorio">
+                                    <p class="aviso"> 
+                                        Este campo es obligatorio
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="input-caja">
+                                <label>Asunto <span class="obligatorio">*</span></label>
+                                <input type="text" name="asunto" class="campo-obligatorio">
+                                <p class="aviso"> 
+                                        Este campo es obligatorio
+                                    </p>
+                            </div>
+                            <div class="input-caja">
+                                <label>Mensaje</label>
+                                <textarea name="mensaje" rows="6"></textarea>
+                            </div>
+                            <button type="submit" class="contacto-btn">
+                                <span>Enviar mensaje</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <div class="toast" id="toast"></div>
+        </main>
+
+        <script src="/javascript/script.js"></script>
+    </body>
+</html>
